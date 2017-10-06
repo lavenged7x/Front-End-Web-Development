@@ -1,0 +1,25 @@
+#navbar{
+    text-align: center;
+    padding: 30px;
+    border-style: solid;
+    border-width: thin;
+    margin: 40px;
+}
+a{
+    padding: 30px;
+    text-decoration: none;
+    color: black; 
+    font-size: 30px;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+html{
+    background-color:aliceblue;
+    
+}
+#education, #technical, #acadamic, #hobbies{
+    margin: 40px
+}

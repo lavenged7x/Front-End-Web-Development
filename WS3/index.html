@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to SCE!</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <!--This is empty space text-->
+    <body>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#instructions">VIDEO GUIDES</a>
+            <a href="#photog">PHOTOGRAPHY</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#resume">RESUME</a>
+        </nav>
+        
+        <div id = "home" class="section sectionOne">
+            <section id ="intro">
+                <h1 class="wordformatHeader">Leo Alonso Cabrera</h1>
+                <p class="wordformatParagraph"><i>| Designer | Programmer | Visionary | The True Starving College Engineer</i></p>
+                <p class="wordformatParagraph">Thank you for visiting my site. I hope you like it, and that you are able to learn about me, and what I do as not only an engineering, but a rather starving one at that. </p>
+            
+            </section>
+        </div>
+        <div class="subSection">
+            <section id = "qoute">
+                <h2 class="wordformatSubsection"><strong><i>"Everything in the world is about sex except sex. Sex is about power" - Oscar Wilde, The Picture of Dorian Gray</i></strong></h2>
+                
+            </section>
+        </div>
+        
+        <div id ="social_media"class="section sectionTwo">
+            <section id ="socmed">
+                    <h1 class="wordformatHeader">Wanna learn how to do something cool?</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VzPD009qTN4" frameborder="0" allowfullscreen></iframe>
+                    
+            </section>
+        </div>
+        <div class="subSection">
+            <section id = "qoute">
+                <h2 class="wordformatSubsection"><i> "Nearly all men can stand adversity, but if you want to test a man's character, give him power"-Abraham Lincoln</i></h2>
+            </section>
+        </div>
+            
+        <div id="photog"class="section sectionThree">
+            <section id ="socmed">
+                    <h1 class="wordformatHeader">Capturing Some of Life's Best</h1>
+                    <p class="wordformatParagraph">Pictures are not just limited to instagram filters so that they look cute. Pictures are a raw representation of the world that we live in. </p>
+            </section>
+                <div id="container" text-align="center">
+                    <img class="slides" src="dad.jpg">
+                    <img class="slides" src="sandwich.jpg">
+                    <img class="slides" src="bae.jpg">
+                    <img class="slides" src="creek.jpg">
+                    <img class="slides" src="dab.jpg">
+                    <img class="slides" src="white%20rose.jpg">
+                    <img class="slides" src="cupcakes.jpg">
+    
+                    <button class="btn" onclick="plusIndex(-1)" id="btn1">
+                    &#10095;
+                    </button>
+
+                    <button class="btn" onclick="plusIndex(1)" id="btn2">
+                    &#10094;
+                    </button>
+                </div>
+            
+            
+            <script>
+                var index = 1;               
+                function plusIndex(n){
+                    index=index+1;
+                    showImage(index);
+                }
+                showImage(1);                
+                function showImage(n){
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    if(n>x.length){
+                        index = 1;
+                    }
+                    if(n<1){
+                        index = x.length;
+                    }
+                    for (i=0; i < x.length; i++){
+                        x[i].style.display ="none";
+                    }
+                    x[index-1].style.display="block";
+                }
+            </script>
+        </div>
+        <div class="subSection"></div>
+        
+        <div id ="skills"class="section sectionFour">
+            
+        </div>
+        
+        <div class="subSection"></div>
+        
+        <div id ="resume"class="section sectionFive">
+            <embed src="Leo%20Alonso%20Cabrera%20-%20Resume.pdf" width="800px" height="550px"/>
+        </div>
+    
+    </body>
+    <!--This is empty space text-->
+    <footer>
+        <h3>Copyright starvingcollegeengineer.com. All rights reserved</h3>
+    </footer>
+</html>

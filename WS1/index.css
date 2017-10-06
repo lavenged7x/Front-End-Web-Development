@@ -1,0 +1,41 @@
+#begging{
+    text-align: center;
+}
+
+#navbar{
+    text-align: center;
+    padding: 30px;
+    border-style: solid;
+    border-width: thin;
+    margin: 40px;
+}
+#desc{
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline
+}
+#intro{
+    padding: 40px;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+a{
+    padding: 30px;
+    text-decoration: none;
+    color: black; 
+    font-size: 30px;
+}
+html{
+    background-color:aliceblue;
+    
+}

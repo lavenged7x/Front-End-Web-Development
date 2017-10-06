@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <body>  
+        <section id = "get_user_info">
+            <p>Click the button to demonstrate the prompt box.</p>
+            <button onclick="myFunction()">Try it</button>
+            <p id="demo"></p>
+            
+            <script>
+            function myFunction() 
+                {
+                    var person = prompt("Please enter your name", "Harry Potter");
+                    if (person != null) 
+                    {
+                        if (person === " " || person === "")
+                        {
+                            alert("Invalid input type");
+                        }
+        
+                        else
+                        {
+                            document.getElementById("demo").innerHTML =
+                            "Hello " + person + "! How are you today? "; //this is an element statement
+                        }
+                    }
+                }
+            </script>
+        </section>   
+        
+        <!--we will be modifying this function to make it work for several testcases-->
+        <section id="calc_function">    
+        <p>Click the button to the Calculator Function</p>
+        <button onclick="calcFunction()">Try it</button>
+        <p id="demo1"></p>
+            
+            <script>    
+                function calcFunction()
+                {
+                    var operation = prompt("Enter an operation: +, - , * , / ", "Select an operation");
+                   
+                    var var1 = prompt("Enter a number you wish to compute: ");
+                    var var2 = prompt("Enter a number you wish to compute: ");
+                    
+                    var x = parseInt(var1);
+                    var y = parseInt(var2);
+                    
+                        if (operation === "+")
+                            {
+                                var resultAdd = x + y;
+                                document.getElementById("demo1").innerHTML = "Result of addition is: " + resultAdd + ".";
+                            }
+                        if (operation === "-")
+                            {
+                                var resultSub = x - y;
+                                document.getElementById("demo1").innerHTML = "Result of subtraction is: " + resultSub + ".";
+                            }
+                        if (operation === "/")
+                            {
+                                var resultDiv = x / y;
+                                document.getElementById("demo1").innerHTML = "Result of division is: " + resultDiv + ".";
+                            }
+                        if (operation === "*")
+                            {
+                                var resultMult = x * y;
+                                document.getElementById("demo1").innerHTML = "Result of division is: " + resultMult + ".";
+                            }
+                        if (operation === "" || operation === " ")
+                            {
+                                alert("Did not input proper input. Terminating program!");
+                                throw new Error("Something went badly wrong!");
+                            }
+                        else
+                            {
+                                alert("Did not input proper input. Terminating program!");
+                                throw new Error("Something went badly wrong!");
+                            }
+                }    
+            </script>
+        </section>
+    </body>
+</html>
